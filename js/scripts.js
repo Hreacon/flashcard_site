@@ -4,7 +4,7 @@ $(function(){
    ["Modulo", "%, the remainder of x/y"],
    ["Operators", "Mathematical operators, such as, +, -, /, *, %, ^, and =="],
    ["NaN", "Not a Number, but it is a type of number!"],
-   ["Camel Capitalization", "aWayToNameVariablesWithoutSpacesButCapitalizingTheFirstLetterOfEveryWord"],
+   ["Camel Capitalization", "aWayToNameVariables withoutSpacesBut capitalizingTheFirst letterOfEvery word"],
    ["+=", "Add the right to the left, instead of = which replaces the left with the right"],
    ["Function", "A fancy way to say 'Run this block of text'"],
    ["Method", "A piece of code performed on an object"],
@@ -25,7 +25,9 @@ $(function(){
  $(".flashcard").click(function() {
   if(window.answer == 0) {
     answer++;
+    $(".flashcard p").css("font-size", "2em");
   } else {
+    $(".flashcard p").css("font-size", "3em");
     answer = 0;
     if( cardNum >= window.flashcards.length -1)
         cardNum = 0;
