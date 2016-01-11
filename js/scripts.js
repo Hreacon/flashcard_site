@@ -19,5 +19,19 @@ $(function(){
    ["Parameter", "the names of the arguments in a function"],
    ["Return", "the value provided back to the user after a function is performed"]
  ];
-
- });
+ window.cardNum = 0;
+ window.answer = 0;
+ $(".flashcard p").text(window.flashcards[0][0]);
+ $(".flashcard").click(function() {
+  if(window.answer == 0) {
+    answer++;
+  } else {
+    answer = 0;
+    if( cardNum >= window.flashcards.length -1)
+        cardNum = 0;
+      else
+        cardNum++;
+  }
+  $(".flashcard p").text(window.flashcards[cardNum][answer]);
+});
+});
