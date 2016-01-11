@@ -1,17 +1,30 @@
 
 .flashcard {
   position: absolute;
-  left:10%;
-  top:10%;
+  background:rgba(200,200,200,.5);
+  left:200px;
+  top:200px;
   width:400px;
   height:400px;
+}
+.flashcard, .answer {
   border:2px solid black;
-  background:rgba(200,200,200,.5);
   border-radius:10px;
   text-align: center;
   vertical-align: middle;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 .flashcard p {
   font-size: 3em;
-  font-weight: bold;
+}
+.answer {
+  position: absolute;
+  background: #00ccff;
+  left:200px;
+  top:100px;
+  width:400px;
+  height:50px;
+  line-height: 50px;
+  font-size: 2em;
 }
