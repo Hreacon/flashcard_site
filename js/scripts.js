@@ -23,6 +23,8 @@ $(function(){
  window.answer = 0;
  $(".flashcard p").text(window.flashcards[0][0]);
  $(".flashcard").click(function() {
+   var questionText = "Question";
+   var answerText = "Answer";
   if(window.answer == 0) {
     answer++;
     $(".flashcard p").css("font-size", "2em");
@@ -33,6 +35,11 @@ $(function(){
         cardNum = 0;
       else
         cardNum++;
+  }
+  if( $(".answer").html() == answerText ) {
+    $(".answer").text(questionText);
+  } else {
+    $(".answer").text(answerText);
   }
   $(".flashcard p").text(window.flashcards[cardNum][answer]);
 });
