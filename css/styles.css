@@ -1,15 +1,17 @@
 
 .flashcard {
   position: absolute;
-  left:100px;
-  top:100px;
-  width:300px;
-  height:300px;
+  left:10%;
+  top:10%;
+  width:400px;
+  height:400px;
   border:2px solid black;
   background:rgba(200,200,200,.5);
   border-radius:10px;
   text-align: center;
+  vertical-align: middle;
 }
 .flashcard p {
-  margin-top:50px;
+  font-size: 3em;
+  font-weight: bold;
 }
